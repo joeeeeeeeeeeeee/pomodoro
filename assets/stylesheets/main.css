@@ -25,7 +25,6 @@ body{
   margin: 100px auto 0;
   width: 420px;
   height: 420px;
-  border-radius: 50%;
   box-shadow: 0 0 0 10px #fff,
               0 0 0 40px #eee,
               0 0 0 46px #fff,
@@ -46,11 +45,20 @@ body{
   background: #eee;
   grid-area: t;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 35px;
   box-shadow: 0 0 0 6px #fff,
               0 0 0 12px #eee;
   font-size: 25px;
   letter-spacing: 2px;
+}
+/*for larger than mobile*/
+@media only screen and (min-width: 500px){
+  #timer_wrapper{
+    border-radius: 50%;
+  }
+  #timer_type{
+    padding-top: 45px;
+  }
 }
 #start_pomodoro{
   grid-area: p;
